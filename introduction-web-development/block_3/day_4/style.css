@@ -1,0 +1,70 @@
+header {
+    background-color: indianred;
+    font-size: 50px;
+    
+}
+
+nav {
+    background-color: coral; 
+    /* esta cor é sobreposta por ul */
+}
+
+ul {
+    background-color: coral;
+}
+
+li {
+    display: inline;
+    background-color: aquamarine;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+    font-style: italic;
+}
+
+article {
+    background-color: aquamarine;
+    margin-right: 200px;
+}
+
+aside   {
+    float: right;
+    background-color: cornflowerblue;
+    padding-bottom: 40%;
+}
+
+table,
+td {
+    border: 1px solid #3333;
+    background-color: gainsboro;
+}
+th {
+    border: 1px solid #3333;
+    background-color: darkkhaki;
+}
+thead,
+tfoot {
+    background-color: red;
+    /* esta cor é sobreposta por th */
+    color: black;
+}
+
+footer {
+    background-color: mediumpurple;
+}
+
+img{
+    right: 3px;
+    bottom: -190px;
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+}
