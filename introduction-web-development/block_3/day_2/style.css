@@ -1,0 +1,19 @@
+h1 {
+    font-style: sans-serif;
+    font-weight: 600;
+    color: orange;
+    font-size: 65px;
+    text-align: center;
+    text-decoration: dashed;
+    line-height: 0%;
+}
+p {
+    font-size: 48px;
+}
+.altera-p-e-ul {
+    font-style: sans-serif;
+    background-color: lightgreen;
+}
+body {
+    font-size: 16px;
+}
