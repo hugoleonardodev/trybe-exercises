@@ -1,1 +1,1 @@
-Create day 1 folder
+Create day 1 folder for JavaScript exercises.
