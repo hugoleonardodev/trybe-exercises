@@ -7,7 +7,7 @@ function highestValuePosition(array) {
         highestValue = array[1];
         highestPosition = 1;
     }
-    for (let index = 2; index < array.length-1; index += 1) {
+    for (let index = 2; index < array.length; index += 1) {
         if (array[index] > highestValue) {
             highestValue = array[index];
             highestPosition = index;
