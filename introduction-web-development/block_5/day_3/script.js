@@ -45,14 +45,14 @@ createDaysOfTheMonth();
 
 //Requirement 2;
 
-function createButton(string) {
+function createButtonFeriados(string) {
 	let buttonFeriados = document.createElement('button');
 	buttonFeriados.id = 'btn-holiday';
 	buttonFeriados.innerText = string;
 	let buttonFeriadosContainer = document.querySelector('.buttons-container');
 	buttonFeriadosContainer.appendChild(buttonFeriados);
 };
-createButton("Feriados", 'btn-holiday');
+createButtonFeriados("Feriados", 'btn-holiday');
 
 //Requirement 3;
 
@@ -88,3 +88,11 @@ changeColorOnHolidays();
 
 //Requirement 4;
 
+function createButtonFridays(buttonName) {
+	let buttonFridays = document.createElement('button');
+	buttonFridays.id = 'btn-friday';
+	buttonFridays.innerText = buttonName;
+	let buttonFridaysContainer = document.querySelector('.buttons-container');
+	buttonFridaysContainer.appendChild(buttonFridays);
+};
+createButtonFridays("Sexta-feira");
