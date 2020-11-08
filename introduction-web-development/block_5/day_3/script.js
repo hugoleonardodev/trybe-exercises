@@ -81,3 +81,6 @@ function changeColorOnHolidays() {
 	};
 };
 changeColorOnHolidays();
+
+//Requirement 4;
+
