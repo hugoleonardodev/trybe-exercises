@@ -96,3 +96,43 @@ function createButtonFridays(buttonName) {
 	buttonFridaysContainer.appendChild(buttonFridays);
 };
 createButtonFridays("Sexta-feira");
+
+// Requirement 5;
+
+let fridaysChanged = false;
+
+function fridaysChanger() {
+  // Picking all fridays
+  const allFridays = document.querySelectorAll('.day-friday');
+  const fridayHoliday = document.querySelectorAll('.holiday-friday-day');
+
+  for (let index = 0; index < allFridays.length; index += 1) {
+    // If fridays are not changed yet, change them
+    if (fridaysChanged === false) {
+      allFridays[index].innerHTML = 'SEXTOU!!';
+    }
+    // If fridays are already changed, switch them back to normal
+    else {
+			let thisFriday = allFridays[index];
+			let previousDay = parseInt(thisFriday.previousSibling.innerHTML);
+			thisFriday.innerHTML = previousDay + 1;
+    }
+  }
+  for (let index1 = 0; index1 < fridayHoliday.length; index1 += 1) {
+    // If fridays are not changed yet, change them
+    if (fridaysChanged === false) {
+      fridayHoliday[index1].innerHTML = 'SEXTOU!!';
+    }
+    // If fridays are already changed, switch them back to normal
+    else {
+			let thisFriday1 = fridayHoliday[index1];
+			let previousDay1 = parseInt(thisFriday1.previousSibling.innerHTML);
+			thisFriday1.innerHTML = previousDay1 + 1;
+    }
+  }
+  fridaysChanged = !fridaysChanged;
+}
+
+let btnFridays = document.getElementById('btn-friday');
+btnFridays.addEventListener('click', fridaysChanger);
+
