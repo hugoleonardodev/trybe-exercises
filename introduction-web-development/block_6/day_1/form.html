@@ -32,17 +32,18 @@
     <fieldset class="job-info-container">
       <legend>Informações profissionais</legend>
       <legend>Resumo do curríclo</legend>
-      <textarea maxlength="1000" required></textarea>
+      <textarea class="text-area" maxlength="1000" required></textarea>
       <legend>Cargo</legend>
       <input type="text" maxlength="40" required>
       <legend>Descrição do cargo</legend>
-      <textarea maxlength="500" required></textarea>
+      <textarea class="text-area" maxlength="500" required></textarea>
       <legend>Data de início</legend>
-      <input type="date" required>
+      <input type="date" min="2000-01-01" max="2022-12-31" required>
     </fieldset>
   </form>
   <button id="generate-curriculum">Gerar Curriculum</button>
   <div class="invalid-fields">Campos Inválidos</div>
+  <div class="validation-curriculum">Olá, John Doe</div>
 </body>
 <script src="script.js"></script>
 
