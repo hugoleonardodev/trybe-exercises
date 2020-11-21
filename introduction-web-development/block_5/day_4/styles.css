@@ -1,3 +1,15 @@
-p {
-
+.texto {
+  margin-right: 675px;
 }
+
+#options-container {
+  position: fixed;
+  margin-left: 475px;
+}
+
+.campo-opcao {
+  margin-bottom: 20px;
+}
+
+
+  

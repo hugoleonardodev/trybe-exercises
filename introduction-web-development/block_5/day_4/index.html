@@ -3,16 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Texto Lorem Ipsum Portugues</title>
+    <title>Leitor de conteudo</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+    <section id="options-container">
+        <h3>Opções de Leitura</h3>
+        <fieldset id="campo1" class="campo-opcao">
+            <legend>Cor do Fundo</legend>
+                <label for="cor-fundo-branco">
+                    <input type="radio" id="cor-fundo-branco" name="cor-fundo" value="white" checked>Branco
+                </label>
+                <label for="cor-fundo-cinza">
+                    <input type="radio" id="cor-fundo-cinza" name="cor-fundo" value="grey">Cinza
+                </label>
+                <label for="cor-fundo-dark">
+                    <input type="radio" id="cor-fundo-dark" name="cor-fundo" value="dark-grey">Dark
+                </label>
+        </fieldset>
+        <fieldset class="campo-opcao">
+            <legend>Cor do Texto</legend>
+                <label for="cor-texto-preto">
+                    <input type="radio" id="cor-texto-preto" name="cor-texto" value="black" checked>Preto
+                </label>
+                <label for="cor-texto-cinza">
+                    <input type="radio" id="cor-texto-cinza" name="cor-texto" value="grey">Cinza
+                </label>
+                <label for="cor-texto-branco">
+                    <input type="radio" id="cor-texto-branco" name="cor-texto" value="white">Branco
+                </label>
+        </fieldset>
+        <fieldset class="campo-opcao">
+            <legend>Tamanho da Fonte</legend>
+                <label for="fonte-pequena">
+                    <input type="radio" id="fonte-pequena" name="tamanho-fonte" value="small">Pequeno
+                </label>
+                <label for="fonte-normal">
+                    <input type="radio" id="fonte-normal" name="tamanho-fonte" value="normal" checked>Normal
+                </label>
+                <label for="fonte-grande">
+                    <input type="radio" id="fonte-grande" name="tamanho-fonte" value="large">Grande
+                </label>
+        </fieldset>
+        <fieldset class="campo-opcao">
+            <legend>Entre Linhas</legend>
+                <label for="um-pixel">
+                    <input type="radio" id="um-pixel" name="espaço-entre-linhas" value="half-pixel" checked>1 pixel
+                </label>
+                <label for="dois-pixels">
+                    <input type="radio" id="dois-pixels" name="espaço-entre-linhas" value="one-pixel">2 pixels
+                </label>
+                <label for="tres-pixels">
+                    <input type="radio" id="tres-pixels" name="espaço-entre-linhas" value="one-half-pixel">3 pixels
+                </label>
+        </fieldset>
+        <fieldset class="campo-opcao">
+            <legend>Tipo da Fonte</legend>
+                <label for="sans-serif">
+                    <input type="radio" id="sans-serif" name="tipo-fonte" value="sans-serif" checked>Sans-Serif
+                </label>
+                <label for="monospace">
+                    <input type="radio" id="monospace" name="tipo-fonte" value="monospace">Monospace
+                </label>
+                <label for="cursive">
+                    <input type="radio" id="cursive" name="tipo-fonte" value="cursive">Cursive
+                </label>
+        </fieldset>
+    </section>
     <header>
-        <h1>Texto Lorem Ipsum Portugues</h1>
+        <h1>Leitor de conteudo</h1>
         <h2>O que é Lorem Ipsum?</h2>
     </header>
-    <article>
+    <article class="texto">
         <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e 
         de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado 
         por estas indústrias desde o ano de 1500, quando uma misturou os 
@@ -23,6 +85,35 @@
         continham passagens com Lorem Ipsum, e mais recentemente com os 
         programas de publicação como o Aldus PageMaker que incluem versões do 
         Lorem Ipsum.</p>
+        <p>Nam gravida blandit dui, eu tincidunt tortor scelerisque eu. Curabitur
+        facilisis, elit a venenatis auctor, felis dui tempor justo, nec accumsan 
+        velit ligula at lacus. Ut dapibus nulla sit amet molestie malesuada. Cras 
+        lectus urna, condimentum quis fringilla laoreet, suscipit sit amet leo. 
+        Etiam viverra eleifend arcu vel ornare. Vestibulum sed odio ut purus venenatis bibendum. 
+        Duis posuere ullamcorper dui id scelerisque. Cras in pharetra sapien.</p>
+        <p>Nullam eu suscipit lectus. Nulla condimentum leo sed est ultricies, a 
+        scelerisque est viverra. Proin at ligula eget lacus egestas ornare. Mauris consectetur 
+        in justo vel cursus. Maecenas interdum aliquet nunc in tincidunt. Cras nec ex id tortor 
+        finibus pellentesque non non leo. Sed eget mauris et augue mattis efficitur. Nullam eu sem 
+        urna. Quisque et iaculis diam. Sed semper, neque ut volutpat auctor, nisl lorem auctor tellus, 
+        tristique maximus mauris justo in justo. Pellentesque ut tincidunt dui. Nulla euismod nisi 
+        vehicula, hendrerit ipsum sit amet, ornare diam. Nulla pharetra aliquet sem, at sodales diam 
+        lacinia eu.</p>
+        <p>Pellentesque condimentum dui justo, non hendrerit quam tristique vitae. Mauris dui enim, 
+        scelerisque eget luctus vel, viverra ac sem. Nulla consequat eleifend massa, ut tincidunt est 
+        rutrum a. Aenean ut dignissim augue. Sed lobortis augue quis elit faucibus, eget pretium mi 
+        tempus. Duis at pulvinar leo. Nullam scelerisque, lorem id vulputate rhoncus, mi elit suscipit 
+        orci, pellentesque convallis mi lacus id elit. Ut in dolor sagittis, accumsan justo non, egestas
+        orci. Sed dictum ut nulla vel porttitor. Aliquam gravida mi massa.</p>
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+        Phasellus porta eget justo viverra venenatis. Nulla lacinia volutpat massa, eu porta tortor 
+        convallis et. Curabitur pharetra cursus nibh a dapibus. Praesent augue risus, mattis in ex suscipit, 
+        aliquet accumsan metus. Etiam leo neque, finibus at felis a, rhoncus ultricies nisi. Vivamus tincidunt 
+        vitae dui blandit tristique. Vestibulum vitae commodo diam. Fusce eu augue et ante porta molestie. 
+        Etiam mollis nisl est, in aliquet orci tristique id. Sed nec massa eu elit viverra lobortis sit
+        amet at enim. Vestibulum sit amet augue ut nulla scelerisque suscipit. Praesent augue lacus, 
+        porta eget varius nec, dignissim nec tellus. Curabitur semper erat et nibh porta consectetur.</p>
     </article>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
