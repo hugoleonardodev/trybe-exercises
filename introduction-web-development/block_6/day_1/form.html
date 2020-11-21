@@ -7,7 +7,42 @@
   <link rel="stylesheets" href="styles.css">
 </head>
 <body>
-  
+  <form>
+    <fieldset>
+      <legend>Nome</legend>
+      <input type="text" maxlength="40" required>    
+      <legend>Email</legend>
+      <input type="text" maxlength="50" required>
+      <legend>CPF</legend>
+      <input type="text" maxlength="11" required>
+      <legend>Enderço</legend>
+      <input type="text" maxlength="40" required>
+      <legend>Enderço</legend>
+      <input type="text" maxlength="200" required>
+      <legend>Cidade</legend>
+      <input type="text" maxlength="28" required>
+      <legend>Estado</legend>
+      <select>
+        <option>JavaScript</option>
+      </select>
+      <legend>Tipo</legend>
+      <input type="radio" name="home-type" id="casa" value="Casa" required>
+      <label for="casa">Casa</label>
+      <input type="radio" name="home-type" id="apto" value="Apartamento" required>
+      <label for="apto">Apartamento</label>   
+    </fieldset>
+    <fieldset>
+      <legend>Resumo do curríclo</legend>
+      <textarea maxlength="1000" required></textarea>
+      <legend>Cargo</legend>
+      <input type="text" maxlength="40" required>
+      <legend>Descrição do cargo</legend>
+      <textarea maxlength="500" required></textarea>
+      <legend>Data de início</legend>
+      <input type="date" required>
+    </fieldset>
+  </form>
 </body>
-,<script src="script.js"></script>
+<script src="script.js"></script>
+
 </html>
