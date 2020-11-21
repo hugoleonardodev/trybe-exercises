@@ -35,3 +35,22 @@ for (let index = 0; index < states.length; index += 1) {
   stateElement.innerHTML = states[index];
   stateSelector.appendChild(stateElement);
 }
+
+const allInputs = document.querySelectorAll('input[type=text]');
+
+const generateButton = document.getElementById('generate-curriculum');
+
+const invalidFields = document.querySelector('.invalid-fields');
+
+function showInvalid () {
+  invalidFields.style.display = 'flex';
+}
+
+generateButton.addEventListener('click', function (event) {
+	for (let index = 0; index < allInputs.length-1; index += 1) {
+		if (allInputs[index].value === '') {
+      showInvalid ();
+      event.preventDefault();
+		}
+	}
+});

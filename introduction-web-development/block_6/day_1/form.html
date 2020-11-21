@@ -10,30 +10,27 @@
   <h1>Curriculum</h1>
   <form class="full-info-container">
     <fieldset class="personal-info-container">
-      <legend>Informções pessoais</legend>
+      <legend>Informações pessoais</legend>
       <legend>Nome</legend>
       <input type="text" class="dados-pessoais" maxlength="40" required>    
       <legend>Email</legend>
       <input type="text" class="dados-pessoais" maxlength="50" required>
       <legend>CPF</legend>
       <input type="text" class="dados-pessoais" maxlength="11" required>
-      <legend>Enderço</legend>
+      <legend>Endereço</legend>
       <input type="text" class="dados-pessoais" maxlength="40" required>
-      <legend>Enderço</legend>
-      <input type="text" class="dados-pessoais" maxlength="200" required>
       <legend>Cidade</legend>
       <input type="text" class="dados-pessoais" maxlength="28" required>
       <legend>Estado</legend>
-      <select class="select-state">
-      </select>
+      <select class="select-state" required></select>
       <legend>Tipo</legend>
       <input type="radio" name="home-type" id="casa" value="Casa" required>
       <label for="casa">Casa</label>
       <input type="radio" name="home-type" id="apto" value="Apartamento" required>
-      <label for="apto">Apartamento</label>   
+      <label for="apto">Apartamento</label>
     </fieldset>
     <fieldset class="job-info-container">
-      <legend>Informções Profissionais</legend>
+      <legend>Informações profissionais</legend>
       <legend>Resumo do curríclo</legend>
       <textarea maxlength="1000" required></textarea>
       <legend>Cargo</legend>
@@ -44,6 +41,8 @@
       <input type="date" required>
     </fieldset>
   </form>
+  <button id="generate-curriculum">Gerar Curriculum</button>
+  <div class="invalid-fields">Campos Inválidos</div>
 </body>
 <script src="script.js"></script>
 
