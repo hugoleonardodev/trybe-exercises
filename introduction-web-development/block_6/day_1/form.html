@@ -4,26 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Currículum</title>
-  <link rel="stylesheets" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <form>
-    <fieldset>
+  <h1>Curriculum</h1>
+  <form class="full-info-container">
+    <fieldset class="personal-info-container">
+      <legend>Informções pessoais</legend>
       <legend>Nome</legend>
-      <input type="text" maxlength="40" required>    
+      <input type="text" class="dados-pessoais" maxlength="40" required>    
       <legend>Email</legend>
-      <input type="text" maxlength="50" required>
+      <input type="text" class="dados-pessoais" maxlength="50" required>
       <legend>CPF</legend>
-      <input type="text" maxlength="11" required>
+      <input type="text" class="dados-pessoais" maxlength="11" required>
       <legend>Enderço</legend>
-      <input type="text" maxlength="40" required>
+      <input type="text" class="dados-pessoais" maxlength="40" required>
       <legend>Enderço</legend>
-      <input type="text" maxlength="200" required>
+      <input type="text" class="dados-pessoais" maxlength="200" required>
       <legend>Cidade</legend>
-      <input type="text" maxlength="28" required>
+      <input type="text" class="dados-pessoais" maxlength="28" required>
       <legend>Estado</legend>
-      <select>
-        <option>JavaScript</option>
+      <select class="select-state">
       </select>
       <legend>Tipo</legend>
       <input type="radio" name="home-type" id="casa" value="Casa" required>
@@ -31,7 +32,8 @@
       <input type="radio" name="home-type" id="apto" value="Apartamento" required>
       <label for="apto">Apartamento</label>   
     </fieldset>
-    <fieldset>
+    <fieldset class="job-info-container">
+      <legend>Informções Profissionais</legend>
       <legend>Resumo do curríclo</legend>
       <textarea maxlength="1000" required></textarea>
       <legend>Cargo</legend>
