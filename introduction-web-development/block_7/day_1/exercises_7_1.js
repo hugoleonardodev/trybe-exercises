@@ -55,3 +55,18 @@ console.log(longestWord("Antonio foi no banheiro e não sabemos o que aconteceu"
 
 // const longestWord = (texto) => console.log(texto.split(' ')[texto.split(' ').length - 1]);
 // longestWord("Antônio foi no banheiro e não sabemos o que aconteceu"); // retorna 'aconteceu'
+
+//Exercise 4
+
+const trocaX = (frase, paremetro) => frase.replace('x', paremetro);
+console.log(trocaX('Tryber x aqui!', 'Hugo Leonardo'));
+
+const arraySkills = ["HTML5", "CSS3", "JavaScript", "Git", "GitHub"];
+const sortedArraySkills = arraySkills.sort();
+console.log(`Minhas cinco principais habilidades são:`);
+
+for (let index = 0; index < sortedArraySkills.length; index += 1) {
+  console.log(` * ${sortedArraySkills[index]}`);
+}
+
+console.log("#goTrybe");
