@@ -25,3 +25,17 @@ const addMorningTurn = (lesson2) => {
 }
 
 addMorningTurn(lesson2);
+
+const keysInObject = (object) => {
+  for (keys in object) {
+    console.log(keys);
+  }
+}
+
+keysInObject(lesson1);
+
+const objectSize = (object) => {
+  console.log(object.length);
+}
+
+objectSize(lesson1);
