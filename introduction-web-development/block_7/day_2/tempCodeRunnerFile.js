@@ -40,10 +40,3 @@ const customerInfo = (order) => {
 }
 
 customerInfo(order);
-
-const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
-
-}
-
-orderModifier(order);
