@@ -1,8 +1,8 @@
-const toBeTested = require('./random-number.js');
+const toBeTested = require('./randomNumber');
 
-jest.mock('./random-number.js');
+jest.mock('./randomNumber.js');
 
-describe('Function returns a number between 0 and 100.', () => {
+describe('Function randomNumber returns a number between 0 and 100.', () => {
   it('Should be called and return 10 as default value.', () => {
     toBeTested.randomNumber.mockReturnValue(10);
     
@@ -31,3 +31,4 @@ describe('Function returns a number between 0 and 100.', () => {
     expect(toBeTested.randomNumber).toHaveBeenCalled();
   });
 });
+
