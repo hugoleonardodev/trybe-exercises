@@ -49,3 +49,18 @@ describe('Function concatStrings.', () => {
     expect(setString.concatStrings).toHaveBeenCalledTimes(2);
   });
 });
+
+// Exercise 5 repeating implementation, restoring and validating.
+
+describe('Function stringToUpperCase mocked to restored and validation.', () => {
+  it('Given a string in lower case, should return a upper case string.', () => {
+    const mockStringToUpperCase = jest.spyOn(setString, 'stringToUpperCase');
+    setString.stringToUpperCase.mockImplementation((string) => string);
+    setString.stringToUpperCase.mockRestore();
+    console.log(setString.stringToUpperCase('trybe'));
+    expect(setString.stringToUpperCase('trybe')).toBe('TRYBE');
+    // expect(setString.stringToUpperCase).toHaveBeenCalled();
+    // expect(setString.stringToUpperCase).toHaveBeenCalledWith('trybe');
+    // expect(setString.stringToUpperCase).toHaveBeenCalledTimes(2);
+  });
+});
