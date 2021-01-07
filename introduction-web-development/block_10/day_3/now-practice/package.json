@@ -1,0 +1,15 @@
+{
+  "name": "now-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "random-number.js",
+  "scripts": {
+    "test": "jest --watchAll --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
