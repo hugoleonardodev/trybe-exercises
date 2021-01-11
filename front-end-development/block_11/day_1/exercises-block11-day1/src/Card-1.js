@@ -8,7 +8,7 @@ const CardWithButton1 = (props) => {
   return (
     <div>
       <Card>
-        <CardImg top width="10%" src="https://hugoleonardodev.github.io/imgs/undraw_to_the_moon_v1mv (1).svg" alt="Card image cap" />
+        <CardImg id='img2' top width="10%" src="https://hugoleonardodev.github.io/imgs/undraw_to_the_moon_v1mv (1).svg" alt="Card image cap" />
         <CardBody>
           <CardTitle tag="h5">LinkedIn</CardTitle>
           <CardSubtitle tag="h6" className="mb-2 text-muted">Hugo Leonardo</CardSubtitle>

@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+#img1 #img2 {
+  width: 10%;
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.card {
+  width: 400px;
+  margin-left: 20px;
+}
+
+#cards-container {
+  display: flex;
+}

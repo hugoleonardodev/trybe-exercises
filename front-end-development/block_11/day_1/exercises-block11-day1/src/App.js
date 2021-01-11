@@ -8,8 +8,10 @@ function App() {
     <div className="App">
       <h1>Hello React!</h1>
       <List />
-      <CardWithButton1 />
-      <CardWithButton2 />
+      <div id="cards-container">
+        <CardWithButton1 />
+        <CardWithButton2 />
+      </div>
     </div>
   );
 }
