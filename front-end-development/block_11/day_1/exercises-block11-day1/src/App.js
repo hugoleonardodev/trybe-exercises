@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="App">
       <h1>Hello React!</h1>
-      <List />
+      <div id="hello-react-list">
+        <List />
+      </div>
       <div id="cards-container">
         <CardWithButton1 />
         <CardWithButton2 />
