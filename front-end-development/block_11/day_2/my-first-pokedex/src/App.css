@@ -1,0 +1,19 @@
+li {
+  display: flex;
+  border: solid 1px black;
+  margin: 20px;
+  weight: 50vw;
+}
+
+#infos {
+  align-items: center;
+  display: flex;
+}
+
+#infos-container {
+  display: flex;
+}
+
+h3 {
+  padding: 10px;
+}
