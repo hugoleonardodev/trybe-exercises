@@ -1,0 +1,67 @@
+{
+  "name": "dog-image",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "node-fetch": "^2.6.1",
+    "react": "^16.13.1",
+    "react-alert": "^7.0.2",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "plugins": [
+      "react-hooks"
+    ],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  },
+  "description": "Esse é um projeto para o conteúdo de `Ciclo de vida de componentes em React`.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugoleonardodev/exercise-dog-image.git"
+  },
+  "keywords": [
+    "React",
+    "Fetch",
+    "API",
+    "Lifecycle",
+    "Component"
+  ],
+  "author": "Hugo Leonardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hugoleonardodev/exercise-dog-image/issues"
+  },
+  "homepage": "https://github.com/hugoleonardodev/exercise-dog-image#readme"
+}
