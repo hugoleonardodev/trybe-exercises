@@ -1,6 +1,7 @@
 export const SELECT = 'SELECT';
 
-export const selectTask = (task) => ({
+export const selectTask = (task, position) => ({
   type: SELECT,
   task,
+  position,
 });

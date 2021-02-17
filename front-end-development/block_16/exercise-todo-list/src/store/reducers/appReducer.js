@@ -13,7 +13,7 @@ export default function appReducer(state = appInitialState, action) {
     case ADD:
       return {
         ...state,
-        listTodo: [...state.listTodo, action.task],
+        listTodo: [...state.listTodo, action.textTodo],
       };
     case REMOVE:
       return {

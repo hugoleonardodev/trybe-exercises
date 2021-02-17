@@ -1,6 +1,12 @@
 export const INPUT = 'INPUT';
+export const ADD = 'ADD';
 
-export const selectTask = (textTodo) => ({
+export const addTask = (textTodo) => ({
+  type: ADD,
+  textTodo,
+});
+
+export const inputTask = (textTodo) => ({
   type: INPUT,
   textTodo,
 });

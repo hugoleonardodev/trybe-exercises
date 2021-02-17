@@ -1,6 +1,6 @@
 export const ADD = 'ADD';
 
-export const addTask = (task) => ({
+export const addTask = (textTodo) => ({
   type: ADD,
-  task,
+  textTodo,
 });

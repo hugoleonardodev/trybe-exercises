@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import InputTodo from './InputTodo';
 import Item from './Item';
 import BtnRemove from './BtnRemove'
+import { inputTask } from './store/actions/inputTask';
+import { addTask } from './store/actions/addTask';
+import { connect } from 'react-redux';
 
 class App extends Component {
   constructor(props) {
@@ -71,4 +74,15 @@ class App extends Component {
     );
   }
 }
-export default App;
+// export default App;
+// mapeia o state global e passa através de props
+const mapStateToProps = (state) => ({
+  textTodo: state.inputTodoReducer.textTodo,
+});
+// mapeia a função que altera o state global e qual propriedade alterar
+const mapDispatchToProps = (dispatch) => ({
+  inputTask: (textTodo) => dispatch(inputTask(textTodo)),
+  addTask: (textTodo) => dispatch(addTask(textTodo)),
+});
+// conecta map e dispatch
+export default connect(mapStateToProps, mapDispatchToProps)(App);
