@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 // import { Switch, Route, Link } from 'react-router-dom';
 
 // import reactlogo from './react-logo.svg';
 // import reduxlogo from './redux-logo.svg';
-import "./App.css";
-import FieldSetA from "./components/FieldSetA";
-import FieldSetB from "./components/FieldSetB";
+import './App.css';
+import FieldSetA from './components/FieldSetA';
+import FieldSetB from './components/FieldSetB';
 
 class App extends Component {
   static function() {
@@ -15,14 +15,14 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
-      email: "",
-      cpf: "",
-      address: "",
-      city: "",
-      state: "",
-      job: "",
-      description: "",
+      name: '',
+      email: '',
+      cpf: '',
+      address: '',
+      city: '',
+      state: '',
+      job: '',
+      description: '',
       experiences: [], // array of objects with keys { job: 'Job Title', description: 'Job Description' }
       // type: ''
     };
@@ -40,8 +40,8 @@ class App extends Component {
     let experience = { job: job, description: description };
     experiences.concat(experience); // spread [...experiences, experience]
     this.setState({
-      job: "",
-      description: "",
+      job: '',
+      description: '',
       experiences: experiences,
     });
   }
