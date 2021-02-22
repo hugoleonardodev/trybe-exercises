@@ -29,10 +29,29 @@
   }
 }
 
-h1 {
+h1,
+h3,
+h5 {
   color: #61dafb;
 }
 
-h2 {
+h2,
+h4,
+h6 {
   color: #764abc;
+}
+
+legend,
+fieldset {
+  color: #61dafb;
+  border-color: #61dafb;
+}
+
+label {
+  color: #764abc;
+}
+
+input {
+  background-color: #282c34;
+  color: white;
 }
