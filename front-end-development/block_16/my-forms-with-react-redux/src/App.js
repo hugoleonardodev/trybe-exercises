@@ -38,7 +38,7 @@ class App extends Component {
   pushJobAndDescription() {
     const { job, description, experiences } = this.state;
     let experience = { job: job, description: description };
-    experiences.push(experience);
+    experiences.concat(experience); // spread [...experiences, experience]
     this.setState({
       job: "",
       description: "",
