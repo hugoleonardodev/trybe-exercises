@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const InputTypeRadio = (props) => {
-  const { onChange } = props;
+  const { handleInput } = props;
   return (
     <fieldset>
       <legend>Residence type</legend>
@@ -12,7 +12,7 @@ const InputTypeRadio = (props) => {
           name="type"
           value="house"
           id="house"
-          onChange={(e) => onChange(e)}
+          onChange={(e) => handleInput(e.target.value, 'type')}
         />
         House
       </label>
@@ -22,7 +22,7 @@ const InputTypeRadio = (props) => {
           name="type"
           value="apartment"
           id="apartment"
-          onChange={(e) => onChange(e)}
+          onChange={(e) => handleInput(e.target.value, 'type')}
         />
         Apartment
       </label>
