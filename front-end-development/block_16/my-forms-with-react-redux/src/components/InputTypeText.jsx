@@ -3,17 +3,12 @@ import PropTypes from 'prop-types';
 
 const InputTypeText = (props) => {
   console.log(Object.keys(props));
-  const { name, value, handleInput } = props;
+  const { name, handleInput } = props;
   console.log(props);
   return (
     <label htmlFor={name}>
       {name}
-      <input
-        // name={Object.keys(props)[0]}
-        type="text"
-        // value={name}
-        onChange={(e) => handleInput(e.target.value, name)}
-      />
+      <input type="text" onChange={(e) => handleInput(e.target.value, name)} />
     </label>
   );
 };

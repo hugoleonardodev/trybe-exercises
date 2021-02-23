@@ -35,11 +35,6 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   handleInput: (position, input) => dispatch(handleInput(position, input)),
-  // email: (position, input) => dispatch(handleInput(position, input)),
-  // cpf: (position, input) => dispatch(handleInput(position, input)),
-  // address: (position, input) => dispatch(handleInput(position, input)),
-  // city: (position, input) => dispatch(handleInput(position, input)),
-  // state: (position, input) => dispatch(handleInput(position, input)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(FieldSetA);
