@@ -1,27 +1,17 @@
-import React, { Component } from 'react';
-// import { Switch, Route, Link } from 'react-router-dom';
-
-// import reactlogo from './react-logo.svg';
-// import reduxlogo from './redux-logo.svg';
+import React from 'react';
+import { Switch, Route, Link, BrowserRouter } from 'react-router-dom';
 import './App.css';
-import FieldSetA from './components/FieldSetA';
-import FieldSetB from './components/FieldSetB';
+import Home from './pages/Home';
+import CurriculumValidation from './pages/Curriculum';
 
 const App = (props) => {
-  const { name, email, cpf, address, city, state } = props;
   return (
-    <div className="App">
-      <FieldSetA
-        name={name}
-        email={email}
-        cpf={cpf}
-        address={address}
-        city={city}
-        state={state}
-        onChange={(e) => this.handleInput(e)}
-      />
-      <FieldSetB />
-    </div>
+    <BrowserRouter className="App">
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/curriculum" component={CurriculumValidation} />
+      </Switch>
+    </BrowserRouter>
   );
 };
 

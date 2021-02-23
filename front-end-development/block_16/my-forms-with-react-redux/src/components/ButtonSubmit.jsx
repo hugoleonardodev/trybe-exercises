@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const ButtonSubmit = (props) => {
   return (
@@ -9,7 +10,7 @@ const ButtonSubmit = (props) => {
         className="asdasdasdasdasdasdasd"
         type="submit"
       >
-        Submit
+        <Link to="/curriculum">Submit</Link>
       </button>
     </div>
   );

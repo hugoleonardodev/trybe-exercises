@@ -6,8 +6,8 @@ import { handleInput } from '../store/actions';
 import { connect } from 'react-redux';
 
 const FieldSetA = (props) => {
-  console.log(props);
   const { name, email, cpf, address, city, state, type, handleInput } = props;
+
   return (
     <fieldset>
       <legend>My Personal Informations</legend>

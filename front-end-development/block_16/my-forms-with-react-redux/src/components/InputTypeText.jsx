@@ -2,9 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const InputTypeText = (props) => {
-  console.log(Object.keys(props));
   const { name, handleInput } = props;
-  console.log(props);
+
   return (
     <label htmlFor={name}>
       {name}

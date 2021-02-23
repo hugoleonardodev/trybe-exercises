@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 const InputTypeRadio = (props) => {
   const { handleInput } = props;
+
   return (
     <fieldset>
       <legend>Residence type</legend>

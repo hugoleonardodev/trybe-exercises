@@ -55,3 +55,7 @@ input {
   background-color: #282c34;
   color: white;
 }
+
+span {
+  margin-left: 10px;
+}
