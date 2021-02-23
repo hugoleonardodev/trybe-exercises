@@ -22,7 +22,16 @@ const FieldSetA = (props) => {
   );
 };
 
-FieldSetA.propTypes = {};
+FieldSetA.propTypes = {
+  name: PropTypes.string,
+  email: PropTypes.string,
+  cpf: PropTypes.string,
+  address: PropTypes.string,
+  city: PropTypes.string,
+  state: PropTypes.string,
+  type: PropTypes.string,
+  handleInput: PropTypes.func,
+}.isRequired;
 
 const mapStateToProps = (state) => ({
   name: state.name,

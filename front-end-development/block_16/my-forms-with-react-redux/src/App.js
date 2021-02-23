@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, Link, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import CurriculumValidation from './pages/Curriculum';

@@ -54,7 +54,16 @@ const FieldSetB = (props) => {
   );
 };
 
-FieldSetB.propTypes = {};
+FieldSetB.propTypes = {
+  job: PropTypes.string,
+  description: PropTypes.string,
+  handleInput: PropTypes.func,
+  pushJobAndDescription: PropTypes.func,
+  experiences: PropTypes.shape({
+    title: PropTypes.string,
+    info: PropTypes.string,
+  }),
+}.isRequired;
 
 const mapStateToProps = (state) => ({
   job: state.job,

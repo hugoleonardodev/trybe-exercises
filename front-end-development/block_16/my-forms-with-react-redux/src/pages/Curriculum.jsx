@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { handleInput, pushJobAndDescription } from '../store/actions';
 
 const CurriculumValidation = (props) => {
   console.log(props);
@@ -57,7 +56,18 @@ const CurriculumValidation = (props) => {
   );
 };
 
-// CurriculumValidation.propTypes = {};
+CurriculumValidation.propTypes = {
+  name: PropTypes.string,
+  email: PropTypes.string,
+  cpf: PropTypes.string,
+  address: PropTypes.string,
+  city: PropTypes.string,
+  state: PropTypes.string,
+  experiences: PropTypes.shape({
+    title: PropTypes.string,
+    info: PropTypes.string,
+  }),
+}.isRequired;
 
 const mapStateToProps = (state) => ({
   name: state.name,
@@ -69,12 +79,6 @@ const mapStateToProps = (state) => ({
   experiences: state.experiences,
 });
 
-// const mapDispatchToProps = (dispatch) => ({
-//   handleInput: (position, input) => dispatch(handleInput(position, input)),
-//   pushJobAndDescription: (job, description) => dispatch(pushJobAndDescription(job, description)),
-// });
-
 export default connect(
   mapStateToProps,
-  // mapDispatchToProps,
 )(CurriculumValidation);

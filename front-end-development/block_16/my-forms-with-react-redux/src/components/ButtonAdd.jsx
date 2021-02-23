@@ -6,8 +6,6 @@ const ButtonAdd = (props) => {
   return (
     <div>
       <button
-        id="asdasasdasd"
-        className="asdasdasd"
         type="submit"
         onClick={() => pushJobAndDescription(job, description)}
       >
@@ -17,6 +15,10 @@ const ButtonAdd = (props) => {
   );
 };
 
-ButtonAdd.propTypes = {};
+ButtonAdd.propTypes = {
+  job: PropTypes.string,
+  description: PropTypes.string,
+  pushJobAndDescription: PropTypes.func,
+}.isRequired;
 
 export default ButtonAdd;
