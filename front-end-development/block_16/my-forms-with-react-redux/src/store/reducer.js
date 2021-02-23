@@ -13,11 +13,15 @@ const initialState = {
 };
 
 export default function reducer(state = initialState, action) {
+  console.log(action);
   switch (action.type) {
     case HANDLE_INPUT:
-      return { ...state, [Object.keys(action[1])]: Object.values(action[1]) };
+      return { ...state, [Object.keys(action)[1]]: Object.values(action)[1] };
     case PUSH_JOB_DESCRIPTION:
-      return { ...state, experiences: [...experiences, action.experience] };
+      return {
+        ...state,
+        experiences: [...state.experiences, action.experience],
+      };
     default:
       return state;
   }
