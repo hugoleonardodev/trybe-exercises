@@ -6,6 +6,7 @@ const appInitialState = {
   listTodo: ['Realizar CR', 'Ler Post no Medium', 'Beber água', 'Estudar', 'Dormir', 'Banho'],
   selected: false,
   position: '',
+  textTodo: '',
 };
 // reducer que executa a action e alter de fato o estado inicial dos carros
 export default function appReducer(state = appInitialState, action) {
