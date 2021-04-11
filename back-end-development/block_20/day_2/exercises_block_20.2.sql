@@ -1,0 +1,15 @@
+SELECT 'This is SQL Exercise, Practice and Solution' AS 'Exercise One';
+SELECT 1 AS 'One', 2 AS 'Two', 3 AS 'Three';
+SELECT ((SELECT 10) + (SELECT 15)) AS RESULT;
+SELECT ((SELECT 1) + (SELECT 2)) AS 'Soma 1 + 2';
+SELECT * FROM Scientists.Scientists;
+SELECT Name AS 'Nome do Projeto', Hours AS 'Tempo de Trabalho' FROM Scientists.Projects;
+SELECT Name AS 'Nome em ordem alfabética Asc' FROM Scientists.Scientists ORDER BY Name ASC;
+SELECT Name AS 'Nome do Projeto ordem alfabética Desc' FROM Scientists.Projects ORDER BY Name DESC;
+SELECT CONCAT('O pojeto ', Name, ', precisou de ', Hours, ' horas para ser concluido.') FROM Scientists.Projects;
+SELECT Name, Hours FROM Scientists.Projects ORDER BY Hours DESC LIMIT 3;
+SELECT DISTINCT Code FROM Scientists.Projects;
+SELECT Name FROM Scientists.Projects ORDER BY Hours DESC LIMIT 1;
+SELECT Name FROM Scientists.Projects ORDER BY Hours DESC LIMIT 1 OFFSET 1;
+SELECT * FROM Scientists.Projects ORDER BY Hours ASC LIMIT 5;
+SELECT CONCAT('Existem ', (SELECT COUNT(*) FROM Scientists.Scientists), ' cientistas na tabela Scientists.') AS 'Exercise 15';

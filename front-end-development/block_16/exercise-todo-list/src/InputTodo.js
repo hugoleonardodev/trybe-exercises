@@ -4,7 +4,7 @@ import { inputTask } from './store/actions/inputTask';
 import { connect } from 'react-redux';
 import { addTask } from './store/actions/addTask';
 
-function InputTodo({ textTodo, inputTask }) {
+function InputTodo({ inputTask, addTask, listTodo }) {
 // class InputTodo extends Component {
   // constructor(props) {
   //   super(props)
@@ -27,10 +27,10 @@ function InputTodo({ textTodo, inputTask }) {
   // render() {
     // const { addTodo } = this.props;
     // const { textTodo } = this.state;
-    let input = '';
+    let textTodo = '';
     const handleInput = (e) => {
-      input = e.target.value
-      inputTask(input);
+      textTodo = e.target.value;
+      inputTask(textTodo);
     }
 
     return (
@@ -42,7 +42,7 @@ function InputTodo({ textTodo, inputTask }) {
           // value={textTodo}
           onChange={(e) => handleInput(e)}
         />
-        <input id="btnAdd" type="button" value="Adicionar" onClick={() => addTask(input)} />
+        <input id="btnAdd" type="button" value="Adicionar" onClick={() => addTask(textTodo)} />
       </div>
     );
   // }
@@ -56,6 +56,7 @@ function InputTodo({ textTodo, inputTask }) {
 // mapeia o state global e passa através de props
 const mapStateToProps = (state) => ({
   textTodo: state.inputTodoReducer.textTodo,
+  // listTodo: state.appReducer.listTodo,
 });
 // mapeia a função que altera o state global e qual propriedade alterar
 const mapDispatchToProps = (dispatch) => ({
